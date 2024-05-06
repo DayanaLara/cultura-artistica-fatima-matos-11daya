@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento con Imagen de Fondo</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo CSS externo -->
+</head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('2.jpg'); /* Cambia 'tu-imagen-de-fondo.jpg' por la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        sesion {
+            background-color: rgba(255, 255, 255, 0.8); /* Añade un fondo blanco semi-transparente para mejorar la legibilidad */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .inputbox {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .inputbox ion-icon {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            color: #555;
+        }
+        .inputbox input {
+            width: 100%;
+            padding: 10px;
+            padding-left: 30px; /* Ajusta el espacio para el icono */
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .forget {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .register {
+            text-align: center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión BIENVENIDOS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #28292b;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #26272b;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            background-color: #751818f2;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0e62c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>BIENVENIDOS</h2>
+        <form action="procesar_login.php" method="post">
+            <input type="text" name="usuario" placeholder="Nombre completo">
+            <input type="text" name="usuario" placeholder="Apellidos completa">
+            <input type="text" name="usuario" placeholder="Edad">
+            <input type="text" name="usuario" placeholder="Correo electrónico o teléfono">
+            <input type="password" name="contrasena" placeholder="Contraseña">
+            <input type="submit" value="REGISTRARME">
+        </form>
+    </div>
+</body>
+</html>
