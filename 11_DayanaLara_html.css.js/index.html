@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUNDO ECOLOGICO</title>
+    <!-- Estilos CSS -->
+    <style>
+        /* Estilos CSS */
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .image-container {
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        .image-container img,
+        .carousel-item img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        section {
+            padding: 20px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        form div {
+            margin-bottom: 10px;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 300px;
+            padding: 5px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .product img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MUNDO ECOLOGICO PARA EL BIEN DE TODOS</h1>
+    </header>
+    <nav>
+        <a href="#nivel1">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+    <hr>
+    <div class="image-container">
+        <img src="https://ecologismos.com/wp-content/2014/07/El-futuro-de-los-productos-ecologicos-2.jpg" alt="Imagen">
+    </div>
+    <section id="nivel1">
+        <h2>DAYANA LARA</h2>
+        <p>
+            Cada año, desde 1970, se celebra el Día Internacional de la Madre Tierra el 22 de abril. En este día conmemoramos la protección del medio ambiente y varias marchas y eventos se realizan para llamar la atención a esta causa. Nuestra biblioteca cuenta con varios textos sobre este tema en todos los grados. Los puedes encontrar introduciendo la palabra clave “medioambiente” en el campo de búsqueda. A continuación les presentamos algunos de nuestros favoritos.
+        </p>
+        <p>La ecología es una ciencia que bebe de la biología, la química, la geología, las matemáticas o la física. Persigue, tal como perseguía Humboldt, entender las complejas relaciones que mantienen los seres vivos entre sí y con su medio, comprender los entresijos de los sistemas ecológicos.</p>
+        <p>Un Mundo Ecológico significa respeto con el medio ambiente, ya que este tipo de producción garantiza la reducción de emisiones de sustancias perjudiciales y contaminantes con el entorno. Esto ayuda a mejorar la calidad del agua, del aire y la tierra donde se cultivan.</p>
+        <a href="https://agroshow.info/agroexponente/mundo-ecologico/#:~:text=Un%20Mundo%20Ecol%C3%B3gico%20significa%20respeto,la%20tierra%20donde%20se%20cultivan.">Leer más</a>
+    </section>
+
+    <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <!-- Aquí van los productos -->
+        <div class="product">
+            <img src="https://ecovegadb.com/wp-content/uploads/2023/08/pitaya-ecologica.jpeg" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Es su poder antioxidante, que favorece a la generación de colágeno, lo cual retarda el envejecimiento. Estudios experimentales han demostrado que el consumo de pitahaya ayuda en la reducción de niveles de presión arterial, y por su contenido en pectina; al alivio de problemas estomacales..</p>
+            <p>Precio: $20</p>
+        </div>
+        <div class="product">
+            <img src="https://media.admagazine.com/photos/618a5d88532cae908aaf2873/16:9/w_4992,h_2808,c_limit/94979.jpg" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>La palta es Mejorar la digestión. Nutre la piel, las uñas y el cabello por su alto contenido en vitaminas C y E. Contribuye a nivelar la presión arterial por ser rico en Potasio. Reduce el riesgo de padecimientos en los ojos, como las cataratas..</p>
+            <p>Precio: $30</p>
+        </div>
+        <!-- Agregar más productos aquí -->
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="contactForm" onsubmit="return validarFormulario()">
+            <div>
+                <label for="nombre">Nombre y Apellido:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="dni">Número de DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+            </div>
+            <div>
+                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+            </div>
+            <div>
+                <label for="codigoPostal">Código postal:</label>
+                <input type="text" id="codigoPostal" name="codigoPostal" required>
+            </div>
+            <div>
+                <label for="comentario">Comentario (100 caracteres):</label>
+                <textarea id="comentario" name="comentario" maxlength="100"></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>2024</p>
+    </footer>
+</body>
+</html>
