@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sueños de mar</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <header class="header">
+        <div class="container-header">
+            <div class="logo">
+                <img src="/img/hotel.png" alt="Logo SRC" />
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Nosotros <i class="fa-solid fa-chevron-down"
+                                id="dropdown-arrow"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/html/galeria.html">Galeria</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/html/nosotros.html">Contáctanos</a></li>
+                </ul>
+            </nav>
+            <div class="social-icon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección letra -->
+    <section class="SRC" id="SRC">
+        <div class="content">
+            <h3 id="WELCOME-title"></h3>
+        </div>
+    </section>
+
+    <div class="container">
+        <h1>Reserva tu Habitación</h1>
+        <form id="reservationForm" onsubmit="return validarFormulario()">
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="fecha-llegada">Fecha de llegada:</label>
+            <input type="date" id="fecha-llegada" name="fecha-llegada" required>
+
+            <label for="fecha-salida">Fecha de salida:</label>
+            <input type="date" id="fecha-salida" name="fecha-salida" required>
+
+            <label for="tipo-habitacion">Tipo de habitación:</label>
+            <select id="tipo-habitacion" name="tipo-habitacion" required>
+                <option value="">Selecciona el tipo de habitación</option>
+                <option value="individual">Individual</option>
+                <option value="doble">Doble</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <label>Preferencias de cama:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="preferencias-cama" value="una-grande"> Una cama grande</label>
+                <label><input type="radio" name="preferencias-cama" value="dos-pequenas"> Dos camas pequeñas</label>
+            </div>
+
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+            <button type="submit">Enviar Reserva</button>
+        </form>
+    </div>
+    <script src="/js/letras.js"></script>
+</body>
+</html>
